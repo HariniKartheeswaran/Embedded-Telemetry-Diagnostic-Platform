@@ -15,4 +15,6 @@ jobs:
 
     - name: Compile Firmware
       run: |
+        ./bin/arduino-cli core update-index
+        ./bin/arduino-cli core install arduino:avr
         ./bin/arduino-cli compile --fqbn arduino:avr:uno firmware/
