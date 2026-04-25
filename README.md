@@ -5,6 +5,7 @@
   [![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
   [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
   [![License](https://img.shields.io/badge/License-MIT-blue.style=for-the-badge)](LICENSE)
+  [![Embedded CI](https://github.com/HariniKartheeswaran/Embedded-Telemetry-Diagnostic-Platform/actions/workflows/build.yaml/badge.svg)](https://github.com/HariniKartheeswaran/Embedded-Telemetry-Diagnostic-Platform/actions/workflows/build.yaml)
 </div>
 
 <hr/>
@@ -136,5 +137,5 @@ Currently defined keys:
 ## 🔮 Future Roadmap
 - [ ] **AI-Based Diagnostics:** Integrate scikit-learn to replace hardcoded thresholds with anomaly detection algorithms.
 - [ ] **Data Logging & Visualisation:** Add a Grafana dashboard and SQLite integration to store and plot historical sensor data.
-- [ ] **CI/CD Pipeline Integration:** Setup GitHub Actions to automate firmware linting (using `cpplint`) and compilation validation.
+- [/] **CI/CD Pipeline Integration:** Firmware compilation automated via GitHub Actions (Linting pending).
 - [ ] **IoT Cloud Sync:** Publish diagnostic states to an MQTT broker for remote monitoring.
