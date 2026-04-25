@@ -4,7 +4,7 @@
 
   [![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
   [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-  [![License](https://img.shields.io/badge/License-MIT-blue.style=for-the-badge)](LICENSE)
+  [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
   [![Embedded CI](https://github.com/HariniKartheeswaran/Embedded-Telemetry-Diagnostic-Platform/actions/workflows/build.yaml/badge.svg)](https://github.com/HariniKartheeswaran/Embedded-Telemetry-Diagnostic-Platform/actions/workflows/build.yaml)
 </div>
 
