@@ -1,0 +1,18 @@
+name: Embedded CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install Arduino CLI
+      run: |
+        curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+
+    - name: Compile Firmware
+      run: |
+        ./bin/arduino-cli compile --fqbn arduino:avr:uno firmware/
