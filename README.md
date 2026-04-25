@@ -85,7 +85,7 @@ graph TD
 ## 💻 Software Setup
 
 ### 1. Firmware (Arduino)
-1. Open `firmware/main.ino` in the [Arduino IDE](https://www.arduino.cc/en/software).
+1. Open `firmware/firmware.ino` in the [Arduino IDE](https://www.arduino.cc/en/software).
 2. Connect your Arduino board via USB.
 3. Select your appropriate Board and COM Port from the `Tools` menu.
 4. Compile and Upload the firmware to the microcontroller.
@@ -137,5 +137,5 @@ Currently defined keys:
 ## 🔮 Future Roadmap
 - [ ] **AI-Based Diagnostics:** Integrate scikit-learn to replace hardcoded thresholds with anomaly detection algorithms.
 - [ ] **Data Logging & Visualisation:** Add a Grafana dashboard and SQLite integration to store and plot historical sensor data.
-- [/] **CI/CD Pipeline Integration:** Firmware compilation automated via GitHub Actions (Linting pending).
+- [ ] **CI/CD Pipeline Integration:** Firmware compilation automated via GitHub Actions (Linting pending).
 - [ ] **IoT Cloud Sync:** Publish diagnostic states to an MQTT broker for remote monitoring.
