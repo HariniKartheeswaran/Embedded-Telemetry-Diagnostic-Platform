@@ -52,21 +52,34 @@ graph TD
 
 ## 🛠 Hardware Requirements
 - **Microcontroller:** Arduino Uno (or compatible board)
+- **Communication:** Bluetooth Module (e.g., HC-05 / HC-06)
 - **Sensors:**
   - Analog Temperature Sensor (e.g., LM35, TMP36, or NTC Thermistor)
   - Analog Sound/Microphone Sensor
-  - Digital Tilt Sensor (e.g., SW-520D or mercury switch)
+  - Digital Tilt / Shock Sensor (e.g., SW-520D or mercury switch)
 - Jumper wires & Breadboard
 
 ## 🔌 Wiring Guide
 
-| Component | Arduino Pin | Description |
-| :--- | :---: | :--- |
-| **Temperature Sensor** | `A0` | Reads ambient temperature (Analog) |
-| **Sound Sensor** | `A1` | Reads ambient noise levels (Analog) |
-| **Tilt Sensor** | `Pin 8` | Detects physical instability (Digital) |
-| **VCC** | `5V` | Common Power Supply |
-| **GND** | `GND` | Common Ground |
+### 2.1 Sensor Wiring
+
+| Component | VCC | GND | OUT/Data |
+| :--- | :---: | :---: | :---: |
+| **Temperature Sensor** | `5V` | `GND` | `A0` |
+| **Sound Sensor** | `5V` | `GND` | `A1` |
+| **Tilt / Shock Sensor** | `5V` | `GND` | `D8` |
+
+### 🔵 2.2 Bluetooth Wiring
+
+| Bluetooth Module | Arduino |
+| :--- | :--- |
+| `VCC` | `5V` |
+| `GND` | `GND` |
+| `TX` | `D0 (RX)` |
+| `RX` | `D1 (TX)` |
+
+> [!WARNING]
+> **IMPORTANT RULE:** Disconnect the `TX` and `RX` pins while uploading code to the Arduino!
 
 ## 💻 Software Setup
 
